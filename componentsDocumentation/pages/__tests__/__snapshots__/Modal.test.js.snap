@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+      "marginTop": 22,
+    }
+  }
+>
+  <Modal
+    animationType="slide"
+    hardwareAccelerated={false}
+    onRequestClose={[Function]}
+    transparent={true}
+    visible={false}
+  />
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "borderRadius": 20,
+          "elevation": 2,
+          "padding": 10,
+        },
+        Object {
+          "backgroundColor": "#F194FF",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "white",
+          "fontWeight": "bold",
+          "textAlign": "center",
+        }
+      }
+    >
+      Show Modal
+    </Text>
+  </View>
+</View>
+`;

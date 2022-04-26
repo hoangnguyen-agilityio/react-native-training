@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTScrollView
+  data={
+    Array [
+      Object {
+        "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+        "title": "First Item",
+      },
+      Object {
+        "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+        "title": "Second Item",
+      },
+      Object {
+        "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+        "title": "Third Item",
+      },
+    ]
+  }
+  extraData={null}
+  getItem={[Function]}
+  getItemCount={[Function]}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={Array []}
+  viewabilityConfigCallbackPairs={Array []}
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#f9c2ff",
+            "marginHorizontal": 16,
+            "marginVertical": 8,
+            "opacity": 1,
+            "padding": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontSize": 32,
+              },
+              Object {
+                "color": "black",
+              },
+            ]
+          }
+        >
+          First Item
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#f9c2ff",
+            "marginHorizontal": 16,
+            "marginVertical": 8,
+            "opacity": 1,
+            "padding": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontSize": 32,
+              },
+              Object {
+                "color": "black",
+              },
+            ]
+          }
+        >
+          Second Item
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#f9c2ff",
+            "marginHorizontal": 16,
+            "marginVertical": 8,
+            "opacity": 1,
+            "padding": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontSize": 32,
+              },
+              Object {
+                "color": "black",
+              },
+            ]
+          }
+        >
+          Third Item
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

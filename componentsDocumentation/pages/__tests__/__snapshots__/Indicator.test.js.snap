@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "marginHorizontal": 16,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#737373",
+        "borderBottomWidth": 2,
+        "marginTop": 24,
+        "paddingVertical": 16,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 18,
+          "marginBottom": 12,
+        }
+      }
+    >
+      Default:
+    </Text>
+    <ActivityIndicator />
+  </View>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#737373",
+        "borderBottomWidth": 2,
+        "marginTop": 24,
+        "paddingVertical": 16,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 18,
+          "marginBottom": 12,
+        }
+      }
+    >
+      Large Indicator with custom color:
+    </Text>
+    <ActivityIndicator
+      color="#00ff00"
+      size="large"
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#737373",
+        "borderBottomWidth": 2,
+        "marginTop": 24,
+        "paddingVertical": 16,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 18,
+          "marginBottom": 12,
+        }
+      }
+    >
+      Small Indicator with custom color:
+    </Text>
+    <ActivityIndicator
+      color="#0000ff"
+      size="small"
+    />
+  </View>
+</RCTSafeAreaView>
+`;

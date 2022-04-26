@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTScrollView
+  data={
+    Array [
+      Object {
+        "data": Array [
+          "Pizza",
+          "Burger",
+          "Risotto",
+        ],
+        "title": "Main dishes",
+      },
+      Object {
+        "data": Array [
+          "French Fries",
+          "Onion Rings",
+          "Fried Shrimps",
+        ],
+        "title": "Sides",
+      },
+      Object {
+        "data": Array [
+          "Water",
+          "Coke",
+          "Beer",
+        ],
+        "title": "Drinks",
+      },
+      Object {
+        "data": Array [
+          "Cheese Cake",
+          "Ice Cream",
+        ],
+        "title": "Desserts",
+      },
+    ]
+  }
+  getItem={[Function]}
+  getItemCount={[Function]}
+  keyExtractor={[Function]}
+  onContentSizeChange={[Function]}
+  onLayout={[Function]}
+  onMomentumScrollBegin={[Function]}
+  onMomentumScrollEnd={[Function]}
+  onScroll={[Function]}
+  onScrollBeginDrag={[Function]}
+  onScrollEndDrag={[Function]}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  stickyHeaderIndices={
+    Array [
+      0,
+      5,
+    ]
+  }
+>
+  <View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <Text
+        data-testID="section-header"
+        style={
+          Object {
+            "backgroundColor": "#fff",
+            "fontSize": 32,
+          }
+        }
+      >
+        Main dishes
+      </Text>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#f9c2ff",
+            "marginVertical": 8,
+            "padding": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontSize": 24,
+            }
+          }
+        >
+          Pizza
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#f9c2ff",
+            "marginVertical": 8,
+            "padding": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontSize": 24,
+            }
+          }
+        >
+          Burger
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#f9c2ff",
+            "marginVertical": 8,
+            "padding": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontSize": 24,
+            }
+          }
+        >
+          Risotto
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    />
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <Text
+        data-testID="section-header"
+        style={
+          Object {
+            "backgroundColor": "#fff",
+            "fontSize": 32,
+          }
+        }
+      >
+        Sides
+      </Text>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#f9c2ff",
+            "marginVertical": 8,
+            "padding": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontSize": 24,
+            }
+          }
+        >
+          French Fries
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#f9c2ff",
+            "marginVertical": 8,
+            "padding": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontSize": 24,
+            }
+          }
+        >
+          Onion Rings
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#f9c2ff",
+            "marginVertical": 8,
+            "padding": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontSize": 24,
+            }
+          }
+        >
+          Fried Shrimps
+        </Text>
+      </View>
+    </View>
+    <View
+      onLayout={[Function]}
+      style={null}
+    />
+    <View
+      style={
+        Object {
+          "height": 0,
+        }
+      }
+    />
+  </View>
+</RCTScrollView>
+`;

@@ -1,0 +1,624 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "marginHorizontal": 16,
+    }
+  }
+>
+  <RCTScrollView>
+    <View>
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#737373",
+            "borderBottomWidth": 2,
+            "marginTop": 24,
+            "paddingVertical": 16,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontSize": 18,
+              "marginBottom": 12,
+            }
+          }
+        >
+          FlatList
+        </Text>
+        <RCTScrollView
+          data={
+            Array [
+              Object {
+                "id": "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
+                "title": "First Item",
+              },
+              Object {
+                "id": "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
+                "title": "Second Item",
+              },
+              Object {
+                "id": "58694a0f-3da1-471f-bd96-145571e29d72",
+                "title": "Third Item",
+              },
+            ]
+          }
+          extraData={null}
+          getItem={[Function]}
+          getItemCount={[Function]}
+          keyExtractor={[Function]}
+          onContentSizeChange={[Function]}
+          onLayout={[Function]}
+          onMomentumScrollBegin={[Function]}
+          onMomentumScrollEnd={[Function]}
+          onScroll={[Function]}
+          onScrollBeginDrag={[Function]}
+          onScrollEndDrag={[Function]}
+          removeClippedSubviews={false}
+          renderItem={[Function]}
+          scrollEventThrottle={50}
+          stickyHeaderIndices={Array []}
+          viewabilityConfigCallbackPairs={Array []}
+        >
+          <View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#f9c2ff",
+                    "marginHorizontal": 16,
+                    "marginVertical": 8,
+                    "opacity": 1,
+                    "padding": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 32,
+                      },
+                      Object {
+                        "color": "black",
+                      },
+                    ]
+                  }
+                >
+                  First Item
+                </Text>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#f9c2ff",
+                    "marginHorizontal": 16,
+                    "marginVertical": 8,
+                    "opacity": 1,
+                    "padding": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 32,
+                      },
+                      Object {
+                        "color": "black",
+                      },
+                    ]
+                  }
+                >
+                  Second Item
+                </Text>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#f9c2ff",
+                    "marginHorizontal": 16,
+                    "marginVertical": 8,
+                    "opacity": 1,
+                    "padding": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontSize": 32,
+                      },
+                      Object {
+                        "color": "black",
+                      },
+                    ]
+                  }
+                >
+                  Third Item
+                </Text>
+              </View>
+            </View>
+          </View>
+        </RCTScrollView>
+      </View>
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#737373",
+            "borderBottomWidth": 2,
+            "marginTop": 24,
+            "paddingVertical": 16,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontSize": 18,
+              "marginBottom": 12,
+            }
+          }
+        >
+          SectionList
+        </Text>
+        <RCTScrollView
+          data={
+            Array [
+              Object {
+                "data": Array [
+                  "Pizza",
+                  "Burger",
+                  "Risotto",
+                ],
+                "title": "Main dishes",
+              },
+              Object {
+                "data": Array [
+                  "French Fries",
+                  "Onion Rings",
+                  "Fried Shrimps",
+                ],
+                "title": "Sides",
+              },
+              Object {
+                "data": Array [
+                  "Water",
+                  "Coke",
+                  "Beer",
+                ],
+                "title": "Drinks",
+              },
+              Object {
+                "data": Array [
+                  "Cheese Cake",
+                  "Ice Cream",
+                ],
+                "title": "Desserts",
+              },
+            ]
+          }
+          getItem={[Function]}
+          getItemCount={[Function]}
+          keyExtractor={[Function]}
+          onContentSizeChange={[Function]}
+          onLayout={[Function]}
+          onMomentumScrollBegin={[Function]}
+          onMomentumScrollEnd={[Function]}
+          onScroll={[Function]}
+          onScrollBeginDrag={[Function]}
+          onScrollEndDrag={[Function]}
+          renderItem={[Function]}
+          scrollEventThrottle={50}
+          stickyHeaderIndices={
+            Array [
+              0,
+              5,
+            ]
+          }
+        >
+          <View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <Text
+                data-testID="section-header"
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "fontSize": 32,
+                  }
+                }
+              >
+                Main dishes
+              </Text>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#f9c2ff",
+                    "marginVertical": 8,
+                    "padding": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontSize": 24,
+                    }
+                  }
+                >
+                  Pizza
+                </Text>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#f9c2ff",
+                    "marginVertical": 8,
+                    "padding": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontSize": 24,
+                    }
+                  }
+                >
+                  Burger
+                </Text>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#f9c2ff",
+                    "marginVertical": 8,
+                    "padding": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontSize": 24,
+                    }
+                  }
+                >
+                  Risotto
+                </Text>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            />
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <Text
+                data-testID="section-header"
+                style={
+                  Object {
+                    "backgroundColor": "#fff",
+                    "fontSize": 32,
+                  }
+                }
+              >
+                Sides
+              </Text>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#f9c2ff",
+                    "marginVertical": 8,
+                    "padding": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontSize": 24,
+                    }
+                  }
+                >
+                  French Fries
+                </Text>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#f9c2ff",
+                    "marginVertical": 8,
+                    "padding": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontSize": 24,
+                    }
+                  }
+                >
+                  Onion Rings
+                </Text>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#f9c2ff",
+                    "marginVertical": 8,
+                    "padding": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontSize": 24,
+                    }
+                  }
+                >
+                  Fried Shrimps
+                </Text>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            />
+            <View
+              style={
+                Object {
+                  "height": 0,
+                }
+              }
+            />
+          </View>
+        </RCTScrollView>
+      </View>
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#737373",
+            "borderBottomWidth": 2,
+            "marginTop": 24,
+            "paddingVertical": 16,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontSize": 18,
+              "marginBottom": 12,
+            }
+          }
+        >
+          VirtualizedList
+        </Text>
+        <RCTScrollView
+          data={Array []}
+          getItem={[Function]}
+          getItemCount={[Function]}
+          initialNumToRender={4}
+          keyExtractor={[Function]}
+          onContentSizeChange={[Function]}
+          onLayout={[Function]}
+          onMomentumScrollBegin={[Function]}
+          onMomentumScrollEnd={[Function]}
+          onScroll={[Function]}
+          onScrollBeginDrag={[Function]}
+          onScrollEndDrag={[Function]}
+          renderItem={[Function]}
+          scrollEventThrottle={50}
+          stickyHeaderIndices={Array []}
+        >
+          <View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#f9c2ff",
+                    "height": 150,
+                    "justifyContent": "center",
+                    "marginHorizontal": 16,
+                    "marginVertical": 8,
+                    "padding": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontSize": 32,
+                    }
+                  }
+                >
+                  Item 1
+                </Text>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#f9c2ff",
+                    "height": 150,
+                    "justifyContent": "center",
+                    "marginHorizontal": 16,
+                    "marginVertical": 8,
+                    "padding": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontSize": 32,
+                    }
+                  }
+                >
+                  Item 2
+                </Text>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#f9c2ff",
+                    "height": 150,
+                    "justifyContent": "center",
+                    "marginHorizontal": 16,
+                    "marginVertical": 8,
+                    "padding": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontSize": 32,
+                    }
+                  }
+                >
+                  Item 3
+                </Text>
+              </View>
+            </View>
+            <View
+              onLayout={[Function]}
+              style={null}
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#f9c2ff",
+                    "height": 150,
+                    "justifyContent": "center",
+                    "marginHorizontal": 16,
+                    "marginVertical": 8,
+                    "padding": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontSize": 32,
+                    }
+                  }
+                >
+                  Item 4
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 0,
+                }
+              }
+            />
+          </View>
+        </RCTScrollView>
+      </View>
+    </View>
+  </RCTScrollView>
+</RCTSafeAreaView>
+`;
