@@ -6,11 +6,7 @@ import Virtualizedlist from '../../../components/VirtualizedList';
 import CenterView from '../CenterView';
 
 storiesOf('List', module)
-  .addDecorator((getStory) => <CenterView>{getStory()}</CenterView>)
-  .add('FlatList', () => (
-    <FlatList />
-  ))
-  .add('SectionList', () => (
-    <Sectionlist />
-  ))
-  .add('Virtualizedlist', () => <Virtualizedlist />)
+  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .add('FlatList', () => <FlatList />)
+  .add('SectionList', () => <Sectionlist />)
+  .add('Virtualizedlist', () => <Virtualizedlist />);

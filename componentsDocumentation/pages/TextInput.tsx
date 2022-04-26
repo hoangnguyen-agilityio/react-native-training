@@ -5,7 +5,7 @@ import Title from '../components/Title';
 
 const TextInputPage = () => {
   const [text, onChangeText] = useState<string>('');
-  const [number, onChangeNumber] = useState<number | null>(null);
+  const [number, onChangeNumber] = useState<string>('');
 
   return (
     <SafeAreaView style={styles.container}>
