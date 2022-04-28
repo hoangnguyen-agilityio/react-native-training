@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+    }
+  }
+>
+  <View>
+    <Text
+      style={
+        Object {
+          "color": "#293032",
+          "fontFamily": "SFPRODISPLAYBOLD",
+          "fontSize": 24,
+        }
+      }
+    >
+      Hi, Nam Duong
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#5142AB",
+          "fontFamily": "SFPRODISPLAYMEDIUM",
+          "fontSize": 16,
+        }
+      }
+    >
+      Wednesday 29 Dec
+    </Text>
+  </View>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/assets/user.png",
+      }
+    }
+    style={
+      Object {
+        "height": 44,
+        "width": 44,
+      }
+    }
+  />
+</View>
+`;

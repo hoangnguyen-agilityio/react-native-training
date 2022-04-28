@@ -1,7 +1,8 @@
 const colors = {
-  bg_purple: '#5142AB',
+  purple: '#5142AB',
   white: '#FFFFFF',
-  black: '#000000'
+  black: '#000000',
+  dark: '#293032'
 };
 
 export default colors;
