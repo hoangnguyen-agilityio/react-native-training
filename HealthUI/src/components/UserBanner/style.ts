@@ -8,12 +8,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   title: {
-    fontFamily: 'SFPRODISPLAYBOLD',
+    fontFamily: 'SF-Pro-Display-Bold',
     fontSize: 24,
     color: colors.dark,
   },
   date: {
-    fontFamily: 'SFPRODISPLAYMEDIUM',
+    fontFamily: 'SF-Pro-Display-Medium',
     color: colors.purple,
     fontSize: 16,
   },
