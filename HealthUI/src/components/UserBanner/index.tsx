@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Image, Text, ImageSourcePropType } from 'react-native';
-import styles from './style';
+import styles from './styles';
 
 interface Props {
   title: string;

@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "borderColor": "#EDEFF7",
+      "borderRadius": 20,
+      "borderWidth": 3,
+      "overflow": "hidden",
+      "padding": 12,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#53668E",
+          "fontFamily": "SF-Pro-Display-Bold",
+          "fontSize": 16,
+        }
+      }
+    >
+      Water
+    </Text>
+    <SvgMock />
+  </View>
+  <Text>
+    Test Feature Layout
+  </Text>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "marginTop": 18,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#5142AB",
+          "fontFamily": "SF-Pro-Display-Bold",
+          "fontSize": 16,
+          "lineHeight": 24,
+        }
+      }
+    >
+      1.0
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#5142AB",
+          "fontFamily": "SF-Pro-Display-Regular",
+          "fontSize": 12,
+          "lineHeight": 22,
+          "marginLeft": 4,
+        }
+      }
+    >
+      liters
+    </Text>
+  </View>
+</View>
+`;

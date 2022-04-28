@@ -15,7 +15,7 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "color": "#293032",
-          "fontFamily": "SFPRODISPLAYBOLD",
+          "fontFamily": "SF-Pro-Display-Bold",
           "fontSize": 24,
         }
       }
@@ -26,7 +26,7 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "color": "#5142AB",
-          "fontFamily": "SFPRODISPLAYMEDIUM",
+          "fontFamily": "SF-Pro-Display-Medium",
           "fontSize": 16,
         }
       }
