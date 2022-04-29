@@ -5,14 +5,31 @@ import styles from './styles';
 interface Props {
   title: string;
   icon: ReactNode;
-  children: ReactNode;
+  children?: ReactNode;
   theme?: 'dark' | 'light';
   number?: string;
   measure?: string;
+  customStyle?: object;
 }
 
-const UserBanner = (props: Props) => {
-  const { title, theme, icon, children, number, measure } = props;
+const Wrapper = (props: any) => {
+  if (0 === 0) {
+    return <View {...props} />;
+  }
+
+  return <View {...props} />;
+};
+
+const FeatureLayout = (props: Props) => {
+  const {
+    title,
+    theme,
+    icon,
+    children = null,
+    number,
+    measure,
+    customStyle = {},
+  } = props;
   const rootStyle = theme === 'dark' ? styles.darkRoot : styles.root;
   const titleStyle = theme === 'dark' ? styles.darkTitle : styles.title;
   const numberStyle = theme === 'dark' ? styles.darkNumber : styles.number;
@@ -24,9 +41,8 @@ const UserBanner = (props: Props) => {
         <Text style={measureStyle}>{measure}</Text>
       </View>
     ) : null;
-
   return (
-    <View style={rootStyle}>
+    <Wrapper style={{ ...rootStyle, ...customStyle }}>
       <View style={styles.header}>
         <Text style={titleStyle}>{title}</Text>
         {icon}
@@ -34,8 +50,8 @@ const UserBanner = (props: Props) => {
       {children}
 
       {footer}
-    </View>
+    </Wrapper>
   );
 };
 
-export default UserBanner;
+export default FeatureLayout;

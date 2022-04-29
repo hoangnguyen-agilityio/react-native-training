@@ -5,22 +5,23 @@ const styles = StyleSheet.create({
   root: {
     borderWidth: 3,
     borderColor: '#EDEFF7',
-    padding: 12,
     borderRadius: 20,
     overflow: 'hidden',
+    justifyContent: 'space-between'
   },
   darkRoot: {
     backgroundColor: colors.purple,
     borderRadius: 20,
-    padding: 12,
+    justifyContent: 'space-between'
   },
   header: {
+    padding: 12,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
   },
   footer: {
-    marginTop: 18,
+    padding: 12,
     flexDirection: 'row',
   },
   title: {
@@ -48,7 +49,7 @@ const styles = StyleSheet.create({
   measure: {
     fontFamily: 'SF-Pro-Display-Regular',
     fontSize: 12,
-    color: colors.purple,
+    color: '#A274CD',
     marginLeft: 4,
     lineHeight: 22,
   },
