@@ -13,7 +13,7 @@ import CaloriesIcon from '../../assets/calories.svg';
 import WalkIcon from '../../assets/walk.svg';
 import BedIcon from '../../assets/bed.svg';
 import useStyle from './styles';
-import AppBar from '../../components/AppBar';
+import TabBar from '../../components/TabBar';
 
 import { NavigationListType } from '../../constants/navigationList';
 
@@ -109,7 +109,7 @@ const Home = ({ navigation }: Props) => {
           </View>
         </SectionLayout>
       </ScrollView>
-      <AppBar />
+      <TabBar />
     </View>
   );
 };

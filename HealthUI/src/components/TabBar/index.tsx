@@ -8,7 +8,7 @@ import ProfileIcon from '../../assets/profile.svg';
 import styles from './styles';
 import IconButton from '../IconButton';
 
-const AppBar = () => {
+const TabBar = () => {
   return (
     <View style={styles.root}>
         <ImageBackground source={require('../../assets/tab-bar.png')} style={styles.appBarBg}>
@@ -30,4 +30,4 @@ const AppBar = () => {
   );
 };
 
-export default AppBar;
+export default TabBar;

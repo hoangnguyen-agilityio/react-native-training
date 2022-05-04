@@ -1,0 +1,42 @@
+export const mockWorkData = [
+  {
+    id: 1,
+    distance: 1.13,
+    calor: 140,
+    duration: '00:12:34',
+    steps: 8372,
+    heartRate: 120,
+  },
+  {
+    id: 2,
+    distance: 1.13,
+    calor: 140,
+    duration: '00:12:34',
+    steps: 8372,
+    heartRate: 120,
+  },
+  {
+    id: 3,
+    distance: 1.13,
+    calor: 140,
+    duration: '00:12:34',
+    steps: 8372,
+    heartRate: 120,
+  },
+  {
+    id: 4,
+    distance: 1.13,
+    calor: 140,
+    duration: '00:12:34',
+    steps: 8372,
+    heartRate: 120,
+  },
+  {
+    id: 5,
+    distance: 1.13,
+    calor: 140,
+    duration: '00:12:34',
+    steps: 8372,
+    heartRate: 120,
+  },
+];
