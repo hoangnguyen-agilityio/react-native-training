@@ -1,6 +1,7 @@
 import React from 'react';
 import { ScrollView, View, Image, Text } from 'react-native';
 import { AnimatedCircularProgress } from 'react-native-circular-progress';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 import FeatureLayout from '../../components/FeatureLayout';
 import SectionLayout from '../../components/SectionLayout';
@@ -14,7 +15,13 @@ import BedIcon from '../../assets/bed.svg';
 import useStyle from './styles';
 import AppBar from '../../components/AppBar';
 
-const Home = () => {
+import { NavigationListType } from '../../constants/navigationList';
+
+interface Props {
+  navigation: NativeStackNavigationProp<NavigationListType, 'Home'>;
+}
+
+const Home = ({ navigation }: Props) => {
   const styles = useStyle();
 
   return (
@@ -43,7 +50,8 @@ const Home = () => {
               icon={<WaterIcon />}
               number="1.0"
               measure="liters"
-              customStyle={styles.flexItemRight}>
+              customStyle={styles.flexItemRight}
+              onPress={() => navigation.navigate('Onboarding')}>
               <View style={styles.waterIllusion}>
                 <Image source={require('../../assets/water-illu.png')} />
               </View>
@@ -62,6 +70,7 @@ const Home = () => {
                     rotation={0}
                     width={6}
                     fill={60}
+                    lineCap="round"
                     tintColor="#5142AB"
                     backgroundColor="#F3F4F7">
                     {fill => (

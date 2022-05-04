@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text,TouchableOpacity } from 'react-native';
 import styles from './styles';
 
 interface Props {
@@ -10,15 +10,8 @@ interface Props {
   number?: string;
   measure?: string;
   customStyle?: object;
+  onPress?: () => void;
 }
-
-const Wrapper = (props: any) => {
-  if (0 === 0) {
-    return <View {...props} />;
-  }
-
-  return <View {...props} />;
-};
 
 const FeatureLayout = (props: Props) => {
   const {
@@ -29,6 +22,7 @@ const FeatureLayout = (props: Props) => {
     number,
     measure,
     customStyle = {},
+    onPress = () => {},
   } = props;
   const rootStyle = theme === 'dark' ? styles.darkRoot : styles.root;
   const titleStyle = theme === 'dark' ? styles.darkTitle : styles.title;
@@ -41,8 +35,9 @@ const FeatureLayout = (props: Props) => {
         <Text style={measureStyle}>{measure}</Text>
       </View>
     ) : null;
+
   return (
-    <Wrapper style={{ ...rootStyle, ...customStyle }}>
+    <TouchableOpacity style={{ ...rootStyle, ...customStyle }} onPress={onPress}>
       <View style={styles.header}>
         <Text style={titleStyle}>{title}</Text>
         {icon}
@@ -50,7 +45,7 @@ const FeatureLayout = (props: Props) => {
       {children}
 
       {footer}
-    </Wrapper>
+    </TouchableOpacity>
   );
 };
 
