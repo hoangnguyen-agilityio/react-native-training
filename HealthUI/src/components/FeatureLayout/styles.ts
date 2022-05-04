@@ -7,12 +7,12 @@ const styles = StyleSheet.create({
     borderColor: '#EDEFF7',
     borderRadius: 20,
     overflow: 'hidden',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
   darkRoot: {
     backgroundColor: colors.purple,
     borderRadius: 20,
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
   header: {
     padding: 12,

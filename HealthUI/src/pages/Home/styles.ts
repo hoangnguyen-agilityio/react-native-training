@@ -4,8 +4,8 @@ import colors from '../../constants/colors';
 const useStyle = () => {
   const styles = StyleSheet.create({
     root: {
-      paddingTop: 24,
       backgroundColor: colors.white,
+      flex: 1,
     },
     flexRow: {
       flexDirection: 'row',
@@ -22,12 +22,12 @@ const useStyle = () => {
       marginLeft: 12,
     },
     itemsCenter: {
-      alignItems: 'center'
+      alignItems: 'center',
     },
     waterIllusion: {
       marginTop: 30,
       marginBottom: 10,
-      alignItems: 'center'
+      alignItems: 'center',
     },
     caloriesGraph: {
       width: '100%',
@@ -48,9 +48,9 @@ const useStyle = () => {
       lineHeight: 14,
       color: '#A274CD',
     },
-  })
+  });
 
   return styles;
-}
+};
 
 export default useStyle;
