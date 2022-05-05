@@ -6,6 +6,7 @@
 function loadStories() {
   require('../src/components/FeatureLayout/FeatureLayout.stories');
   require('../src/components/IconButton/IconButton.stories');
+  require('../src/components/LineChart/LineChart.stories');
   require('../src/components/TabBar/TabBar.stories');
   require('../src/components/UserBanner/UserBanner.stories');
   require('../src/components/Workouts/Workout.stories');
@@ -14,6 +15,7 @@ function loadStories() {
 const stories = [
   '../src/components/FeatureLayout/FeatureLayout.stories',
   '../src/components/IconButton/IconButton.stories',
+  '../src/components/LineChart/LineChart.stories',
   '../src/components/TabBar/TabBar.stories',
   '../src/components/UserBanner/UserBanner.stories',
   '../src/components/Workouts/Workout.stories',

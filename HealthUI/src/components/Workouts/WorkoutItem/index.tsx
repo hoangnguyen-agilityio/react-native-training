@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { Animated, Pressable, Text, View } from 'react-native';
 import styles from './styles';
 import ArrowIcon from '../../../assets/top-arrow.svg';
