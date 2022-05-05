@@ -1,6 +1,7 @@
 import React from 'react';
-import { ScrollView, View, Text } from 'react-native';
+import { ScrollView, Text } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import { LinearTextGradient } from 'react-native-text-gradient';
 import Chart from '../../components/LineChart';
 import SectionLayout from '../../components/SectionLayout';
 import Workouts from '../../components/Workouts';
@@ -10,8 +11,10 @@ const Calories = () => {
   return (
     <LinearGradient colors={['#EDEFF7', '#FFFFFF']}>
     <ScrollView>
-      <Text style={styles.title}>540</Text>
-      <Text style={styles.desc}>calories burned</Text>
+      <LinearTextGradient colors={['#A274CD', '#5142AB']} style={styles.title}>
+      540
+      {/* <Text style={styles.desc}>calories burned</Text> */}
+      </LinearTextGradient>
       <Chart />
       <SectionLayout>
         <Workouts />

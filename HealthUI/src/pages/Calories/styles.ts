@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     fontSize: 32,
     lineHeight: 32,
     textAlign: 'center',
-    color: '#5142AB'
+    // color: '#5142AB'
   },
   desc: {
     fontFamily: 'SF-Pro-Display-Regular',
