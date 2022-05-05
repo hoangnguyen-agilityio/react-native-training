@@ -34,6 +34,7 @@ const Home = ({ navigation }: Props) => {
         </SectionLayout>
         <SectionLayout>
           <View style={styles.flexRow}>
+            {/* Heart */}
             <FeatureLayout
               title="Heart"
               icon={<HeartIcon />}
@@ -43,6 +44,8 @@ const Home = ({ navigation }: Props) => {
               customStyle={styles.flexItemLeft}>
               <HeartGraph width={'100%'} />
             </FeatureLayout>
+
+            {/* Water */}
             <FeatureLayout
               title="Water"
               icon={<WaterIcon />}
@@ -58,6 +61,7 @@ const Home = ({ navigation }: Props) => {
 
           <View style={styles.flexRow}>
             <View style={styles.flexItemLeft}>
+              {/* Walk */}
               <FeatureLayout
                 title="Walk"
                 icon={<WalkIcon />}
@@ -81,6 +85,7 @@ const Home = ({ navigation }: Props) => {
                 </View>
               </FeatureLayout>
 
+              {/* Sleep */}
               <FeatureLayout
                 title="Sleep"
                 icon={<BedIcon />}
@@ -89,6 +94,8 @@ const Home = ({ navigation }: Props) => {
                 customStyle={{ flex: 1, marginTop: 12 }}
               />
             </View>
+
+            {/* Calories */}
             <FeatureLayout
               title="Calories"
               icon={<CaloriesIcon />}

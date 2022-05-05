@@ -23,9 +23,11 @@ const Onboarding = ({ navigation }: Props) => (
         Track your daily water intake in just a few taps!
       </Text>
     </View>
+
+    {/* Next button */}
     <View style={styles.cta}>
       <AnimatedCircularProgress
-        size={72}
+        size={68}
         rotation={-216}
         width={7}
         fill={60}

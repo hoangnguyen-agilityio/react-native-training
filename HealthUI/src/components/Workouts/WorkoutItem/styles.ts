@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
     paddingVertical: 16,
     borderBottomColor: '#EDEFF3',
     borderBottomWidth: 1,
+    overflow: 'hidden'
   },
   flexRow: {
     flexDirection: 'row',
@@ -21,6 +22,7 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: 'SF-Pro-Display-Medium',
     fontSize: 14,
+    lineHeight: 16,
     color: '#53668E',
   },
   distance: {

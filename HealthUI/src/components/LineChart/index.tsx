@@ -29,9 +29,8 @@ const Chart = () => (
         fillShadowGradientFromOpacity: 0,
         fillShadowGradientToOpacity: 0,
         decimalPlaces: 0,
-        color: () => '#5142AB',
-        // labelColor: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
-        propsForDots: {
+        color: () => '#5142AB', // line color
+        propsForDots: { // data point
           r: '9',
           strokeWidth: '5',
           stroke: '#ffffff',
@@ -67,15 +66,15 @@ const Chart = () => (
               top: y,
               bottom: 0,
               width: 20,
-              height: indexData * 2.5,
-              paddingTop: indexData * 2.5,
+              height: 180 - y,
+              paddingTop: 180 - y,
               backgroundColor: '#2FBAF4',
               zIndex: -1,
             }}> */}
           <View
             style={{
               ...styles.xLabelBox,
-              top: y + indexData * 2,
+              top: 180,
               left: x - 40,
             }}>
             <Text style={styles.xLabel}>8:20 Am</Text>

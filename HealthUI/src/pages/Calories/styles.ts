@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   title: {
-    // marginTop: 40,
     fontFamily: 'SF-Pro-Display-Bold',
     fontSize: 32,
     lineHeight: 32,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, View, Text } from 'react-native';
+import { ScrollView } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import GradientText from '../../components/GradientText';
 import Chart from '../../components/LineChart';
