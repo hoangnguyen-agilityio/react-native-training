@@ -3,8 +3,17 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   root: {
     position: 'relative',
+    height: 200,
+  },
+  illusion: {
+    position: 'absolute',
+    left: -5,
+    zIndex: 0,
+    top: 0,
   },
   chart: {
+    position: 'absolute',
+    top: 0,
     marginLeft: -70,
     zIndex: 999,
   },

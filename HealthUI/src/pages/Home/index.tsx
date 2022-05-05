@@ -12,7 +12,7 @@ import HeartGraph from '../../assets/heart-graph.svg';
 import CaloriesIcon from '../../assets/calories.svg';
 import WalkIcon from '../../assets/walk.svg';
 import BedIcon from '../../assets/bed.svg';
-import useStyle from './styles';
+import styles from './styles';
 import TabBar from '../../components/TabBar';
 
 import { NavigationListType } from '../../constants/navigationList';
@@ -22,8 +22,6 @@ interface Props {
 }
 
 const Home = ({ navigation }: Props) => {
-  const styles = useStyle();
-
   return (
     <View style={styles.root}>
       <ScrollView contentContainerStyle={{ paddingTop: 24, paddingBottom: 24 }}>
@@ -96,6 +94,10 @@ const Home = ({ navigation }: Props) => {
               icon={<CaloriesIcon />}
               number="540"
               measure="kcal"
+              linearGradientColors={['#FFFFFF', '#EDEFF7']}
+              onPress={() =>
+                navigation.navigate('Calories', { title: 'Calories' })
+              }
               customStyle={{
                 ...styles.flexItemRight,
                 backgroundColor:

@@ -14,6 +14,10 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     justifyContent: 'space-between',
   },
+  gradientWrapper: {
+    flex: 1,
+    justifyContent: 'space-between',
+  },
   header: {
     padding: 12,
     flexDirection: 'row',

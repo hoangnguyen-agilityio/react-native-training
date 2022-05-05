@@ -21,6 +21,10 @@ target 'HealthUI' do
 
   pod 'RNSVG', :path => '../node_modules/react-native-svg'
 
+  pod 'RNTextGradientView', :path => '../node_modules/react-native-text-gradient'
+
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+
   target 'HealthUITests' do
     inherit! :complete
     # Pods for testing

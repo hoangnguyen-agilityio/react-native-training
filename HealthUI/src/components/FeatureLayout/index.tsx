@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
-import { View, Text,TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 import styles from './styles';
 
 interface Props {
@@ -11,6 +12,7 @@ interface Props {
   measure?: string;
   customStyle?: object;
   onPress?: () => void;
+  linearGradientColors?: string[];
 }
 
 const FeatureLayout = (props: Props) => {
@@ -23,6 +25,7 @@ const FeatureLayout = (props: Props) => {
     measure,
     customStyle = {},
     onPress = () => {},
+    linearGradientColors = [],
   } = props;
   const rootStyle = theme === 'dark' ? styles.darkRoot : styles.root;
   const titleStyle = theme === 'dark' ? styles.darkTitle : styles.title;
@@ -36,8 +39,29 @@ const FeatureLayout = (props: Props) => {
       </View>
     ) : null;
 
+  if (linearGradientColors.length) {
+    return (
+      <TouchableOpacity
+        style={{ ...rootStyle, ...customStyle }}
+        onPress={onPress}>
+        <LinearGradient
+          colors={linearGradientColors}
+          style={styles.gradientWrapper}>
+          <View style={styles.header}>
+            <Text style={titleStyle}>{title}</Text>
+            {icon}
+          </View>
+          {children}
+
+          {footer}
+        </LinearGradient>
+      </TouchableOpacity>
+    );
+  }
   return (
-    <TouchableOpacity style={{ ...rootStyle, ...customStyle }} onPress={onPress}>
+    <TouchableOpacity
+      style={{ ...rootStyle, ...customStyle }}
+      onPress={onPress}>
       <View style={styles.header}>
         <Text style={titleStyle}>{title}</Text>
         {icon}

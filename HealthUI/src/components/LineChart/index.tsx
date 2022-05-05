@@ -8,6 +8,9 @@ const mockData = [60, 70, 40, 10, 40, 70];
 
 const Chart = () => (
   <View style={styles.root}>
+    <View style={styles.illusion}>
+      <Vector width={Dimensions.get('window').width + 10} height={140} />
+    </View>
     <LineChart
       data={{
         labels: ['1', '2', '3', '4', '5', '6'],
@@ -18,7 +21,7 @@ const Chart = () => (
         ],
       }}
       width={Dimensions.get('window').width + 160}
-      height={250}
+      height={200}
       chartConfig={{
         backgroundColor: 'transparent',
         backgroundGradientFromOpacity: 0,
@@ -69,27 +72,18 @@ const Chart = () => (
               backgroundColor: '#2FBAF4',
               zIndex: -1,
             }}> */}
-            <View style={{
+          <View
+            style={{
               ...styles.xLabelBox,
-              top: y + indexData * 2.5,
-              left: x - 40
+              top: y + indexData * 2,
+              left: x - 40,
             }}>
-              <Text style={styles.xLabel}>8:20 Am</Text>
-            </View>
+            <Text style={styles.xLabel}>8:20 Am</Text>
+          </View>
           {/* </View> */}
         </View>
       )}
     />
-
-    <View
-      style={{
-        position: 'absolute',
-        left: -5,
-        zIndex: 0,
-        top: 0
-      }}>
-      <Vector width={Dimensions.get('window').width + 10} height={300} />
-    </View>
   </View>
 );
 
