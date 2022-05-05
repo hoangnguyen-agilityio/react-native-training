@@ -3,6 +3,7 @@ import { Animated, Pressable, Text, View } from 'react-native';
 import styles from './styles';
 import ArrowIcon from '../../../assets/top-arrow.svg';
 import WalkIcon from '../../../assets/walk.svg';
+import GradientText from '../../GradientText';
 
 interface Props {
   isShow: boolean;
@@ -39,10 +40,10 @@ const WorkoutItem = ({
           </View>
         </View>
         <View style={styles.flexRow}>
-          <Text>
+          <GradientText>
             <Text style={styles.calor}>{calor}</Text>
             <Text style={styles.measure}> kcal</Text>
-          </Text>
+          </GradientText>
           <Animated.View
             style={{
               ...styles.arrow,

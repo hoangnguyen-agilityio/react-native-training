@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   number: {
     fontFamily: 'SF-Pro-Display-Bold',
     fontSize: 16,
-    color: colors.purple,
+    // color: colors.purple,
     lineHeight: 24,
   },
   darkNumber: {
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   measure: {
     fontFamily: 'SF-Pro-Display-Regular',
     fontSize: 12,
-    color: '#A274CD',
+    // color: '#A274CD',
     marginLeft: 4,
     lineHeight: 22,
   },

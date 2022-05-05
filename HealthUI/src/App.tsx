@@ -11,9 +11,25 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
-        <Stack.Screen name="Onboarding" component={Onboarding} options={{ headerShown: false }} />
-        <Stack.Screen name="Calories" component={Calories} />
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Onboarding"
+          component={Onboarding}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Calories"
+          component={Calories}
+          options={{
+            title: 'Calories',
+            headerTransparent: true,
+            headerTitleAlign: 'center'
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

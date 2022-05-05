@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import GradientText from '../GradientText';
 import styles from './styles';
 
 interface Props {
@@ -33,10 +34,19 @@ const FeatureLayout = (props: Props) => {
   const measureStyle = theme === 'dark' ? styles.darkMeasure : styles.measure;
   const footer =
     number && measure ? (
-      <View style={styles.footer}>
-        <Text style={numberStyle}>{number}</Text>
-        <Text style={measureStyle}>{measure}</Text>
-      </View>
+      theme === 'dark' ? (
+        <View style={styles.footer}>
+          <Text style={numberStyle}>{number}</Text>
+          <Text style={measureStyle}> {measure}</Text>
+        </View>
+      ) : (
+        <View style={styles.footer}>
+          <GradientText>
+            <Text style={numberStyle}>{number}</Text>
+            <Text style={measureStyle}> {measure}</Text>
+          </GradientText>
+        </View>
+      )
     ) : null;
 
   if (linearGradientColors.length) {

@@ -36,12 +36,10 @@ const styles = StyleSheet.create({
   calor: {
     fontFamily: 'SF-Pro-Display-Bold',
     fontSize: 24,
-    color: colors.purple,
   },
   measure: {
     fontFamily: 'SF-Pro-Display-Regular',
     fontSize: 12,
-    color: '#A274CD',
   },
   arrow: {
     marginLeft: 12,
