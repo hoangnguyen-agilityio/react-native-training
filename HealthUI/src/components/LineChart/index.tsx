@@ -7,8 +7,7 @@ import styles from './styles';
 const mockData = [60, 70, 40, 10, 40, 70];
 
 const Chart = () => (
-  <View style={{ position: 'relative' }}>
-    <Text>Bezier Line Chart</Text>
+  <View style={styles.root}>
     <LineChart
       data={{
         labels: ['1', '2', '3', '4', '5', '6'],
@@ -37,10 +36,7 @@ const Chart = () => (
         },
         strokeWidth: 9,
       }}
-      style={{
-        marginLeft: -70,
-        zIndex: 999,
-      }}
+      style={styles.chart}
       bezier
       fromZero
       withInnerLines={false}
@@ -55,12 +51,10 @@ const Chart = () => (
           <View
             style={{
               ...styles.pointBox,
-              position: 'absolute',
               top: y - 55,
               left: x - 40,
-              zIndex: 1,
             }}>
-            <Text style={styles.dataPoint}>-540 Kcal</Text>
+            <Text style={styles.pointBoxContent}>-540 Kcal</Text>
           </View>
 
           {/* <View
@@ -76,12 +70,11 @@ const Chart = () => (
               zIndex: -1,
             }}> */}
             <View style={{
-              position: 'absolute',
+              ...styles.xLabelBox,
               top: y + indexData * 2.5,
-              width: 80,
               left: x - 40
             }}>
-              <Text style={{ textAlign: 'center' }}>8:20 Am</Text>
+              <Text style={styles.xLabel}>8:20 Am</Text>
             </View>
           {/* </View> */}
         </View>
