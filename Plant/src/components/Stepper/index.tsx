@@ -7,9 +7,10 @@ import styles from './styles';
 interface Props {
   steps: number;
   activeSteps: number;
+  handleMoveToStep: (step: number) => void;
 }
 
-const Stepper: FC<Props> = ({ steps, activeSteps }) => {
+const Stepper: FC<Props> = ({ steps, activeSteps, handleMoveToStep }) => {
   const renderSteps = (): ReactNode => {
     let Steps = [];
 
@@ -19,7 +20,12 @@ const Stepper: FC<Props> = ({ steps, activeSteps }) => {
         backgroundColor: index === activeSteps ? COLORS.GREEN : COLORS.GRAY,
       };
 
-      Steps.push(<TouchableOpacity style={dotStyle} onPress={() => {}} />);
+      Steps.push(
+        <TouchableOpacity
+          style={dotStyle}
+          onPress={() => handleMoveToStep(index)}
+        />,
+      );
     }
 
     return Steps;
