@@ -1,8 +1,10 @@
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import React, { FC, useState } from 'react';
 import { Text, View } from 'react-native';
 
 import FullWidthBtn from '../../components/Button';
 import Stepper from '../../components/Stepper';
+import { NavigationListType } from '../../constants/navigationList';
 import Illustration from './Illustration';
 
 import styles from './styles';
@@ -22,7 +24,11 @@ const ONBOARDING_CONTENT = [
   },
 ];
 
-const Onboarding: FC = () => {
+interface Props {
+  navigation: NativeStackNavigationProp<NavigationListType, 'Home'>;
+}
+
+const Onboarding: FC<Props> = ({ navigation }) => {
   const [step, setStep] = useState(0);
 
   const handleMoveToStep = (step: number): void => {
@@ -34,6 +40,8 @@ const Onboarding: FC = () => {
   const onClickNext = (): void => {
     if (step < 2) {
       setStep(step + 1);
+    } else {
+      navigation.navigate('SignUp');
     }
   };
 

@@ -22,6 +22,7 @@ const Stepper: FC<Props> = ({ steps, activeSteps, handleMoveToStep }) => {
 
       Steps.push(
         <TouchableOpacity
+          key={index}
           style={dotStyle}
           onPress={() => handleMoveToStep(index)}
         />,
