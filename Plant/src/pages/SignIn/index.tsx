@@ -7,7 +7,7 @@ import { TextField } from 'rn-material-ui-textfield';
 import styles from './styles';
 import CheckBox from '@react-native-community/checkbox';
 
-const SignUp: FC = () => {
+const SignIn: FC = () => {
   const [username, setUsername] = useState('');
   const [Password, setPassword] = useState('');
   const [isRemember, setIsRemember] = useState(false);
@@ -20,7 +20,7 @@ const SignUp: FC = () => {
       </View>
 
       {/* sign in form */}
-      <View style={styles.signUpForm}>
+      <View style={styles.SignInForm}>
         <View>
           <TextField
             label="Username"
@@ -59,10 +59,10 @@ const SignUp: FC = () => {
         <FullWidthBtn text="LOGIN" onPress={() => {}} />
       </View>
       <Text style={{ ...styles.smallText, ...styles.formField }}>
-        Don’t Have Account? <Text style={styles.signUpLink}>Sign Up</Text>
+        Don’t Have Account? <Text style={styles.SignInLink}>Sign Up</Text>
       </Text>
     </View>
   );
 };
 
-export default SignUp;
+export default SignIn;

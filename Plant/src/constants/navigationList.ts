@@ -6,11 +6,11 @@ export const NAVIGATION_LIST: {
     page: 'Home',
   },
   {
-    page: 'SignUp',
+    page: 'SignIn',
   },
 ];
 
 export type NavigationListType = {
   Home: undefined;
-  SignUp: undefined;
+  SignIn: undefined;
 };

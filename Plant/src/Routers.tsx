@@ -4,10 +4,10 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from './pages/Home';
 import Onboarding from './pages/Onboarding';
-import SignUp from './pages/SignUp';
+import SignIn from './pages/SignIn';
 
 const Stack = createNativeStackNavigator();
-const isOnboarding = true;
+const isOnboarding = false;
 const Routers: FC = () => {
   const HomeComponent = isOnboarding ? Onboarding : Home;
 
@@ -20,8 +20,8 @@ const Routers: FC = () => {
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="SignUp"
-          component={SignUp}
+          name="SignIn"
+          component={SignIn}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

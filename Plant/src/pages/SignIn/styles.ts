@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     color: COLORS.INDEPENDENCE,
     opacity: 0.8,
   },
-  signUpForm: {
+  SignInForm: {
     width: '100%',
   },
   formField: {
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: COLORS.NICKEL,
   },
-  signUpLink: {
+  SignInLink: {
     fontFamily: 'SF-Pro-Display-Bold',
     fontSize: 12,
     lineHeight: 12,

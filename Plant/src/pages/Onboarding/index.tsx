@@ -41,7 +41,7 @@ const Onboarding: FC<Props> = ({ navigation }) => {
     if (step < 2) {
       setStep(step + 1);
     } else {
-      navigation.navigate('SignUp');
+      navigation.navigate('SignIn');
     }
   };
 
