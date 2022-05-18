@@ -10,7 +10,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 24,
   },
   headerTitle: {
     fontFamily: 'SF-Pro-Display-Bold',
@@ -29,6 +28,24 @@ const styles = StyleSheet.create({
     width: 47,
     height: 47,
   },
+  main: {
+    backgroundColor: COLORS.WHITE,
+  },
+  catalogsWrapper: {
+    marginTop: 35,
+    marginHorizontal: -6,
+  },
+  sectionTitle: {
+    marginTop: 24,
+    marginBottom: 16,
+    fontFamily: 'SF-Pro-Display-Bold',
+    fontSize: 17,
+    lineHeight: 20,
+    color: '#36455A'
+  },
+  horizontalListWrapper: {
+    marginRight: -24,
+  }
 });
 
 export default styles;
