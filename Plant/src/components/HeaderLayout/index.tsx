@@ -5,10 +5,10 @@ import styles from './styles';
 
 interface Props {
   textBg: string;
-  children: ReactNode
+  children?: ReactNode
 }
 
-const Header: FC<Props> = ({ textBg, children }) => {
+const Header: FC<Props> = ({ textBg, children = null }) => {
   return (
     <View style={styles.root}>
       <ImageBackground

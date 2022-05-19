@@ -8,9 +8,13 @@ export const NAVIGATION_LIST: {
   {
     page: 'SignIn',
   },
+  {
+    page: 'Species',
+  },
 ];
 
 export type NavigationListType = {
   Home: undefined;
   SignIn: undefined;
+  Species: undefined;
 };

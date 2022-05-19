@@ -4,15 +4,22 @@ import CameraIcon from '../../assets/images/camera.svg';
 import LeafIcon from '../../assets/images/leaf.svg';
 import BookIcon from '../../assets/images/book.svg';
 import styles from './styles';
+import { NavigationListType } from '../../constants/navigationList';
 
-const Catalogs: FC = () => {
+interface Props {
+  handleMoveToPage: (page: keyof NavigationListType) => void;
+}
+
+const Catalogs: FC<Props> = ({ handleMoveToPage }) => {
   return (
     <View style={styles.root}>
       <TouchableOpacity style={styles.catalogActive}>
         <CameraIcon width={21} height={21} style={{ marginBottom: 6 }} />
         <Text style={styles.textActive}>IDENTIFY</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.catalog}>
+      <TouchableOpacity
+        style={styles.catalog}
+        onPress={() => handleMoveToPage('Species')}>
         <LeafIcon
           width={27}
           height={27}

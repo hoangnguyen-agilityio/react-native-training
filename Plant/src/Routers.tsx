@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './pages/Home';
 import Onboarding from './pages/Onboarding';
 import SignIn from './pages/SignIn';
+import Species from './pages/Species';
 
 const Stack = createNativeStackNavigator();
 const isOnboarding = false;
@@ -22,6 +23,11 @@ const Routers: FC = () => {
         <Stack.Screen
           name="SignIn"
           component={SignIn}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Species"
+          component={Species}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
