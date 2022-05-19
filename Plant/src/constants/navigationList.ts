@@ -11,10 +11,14 @@ export const NAVIGATION_LIST: {
   {
     page: 'Species',
   },
+  {
+    page: 'Plants',
+  },
 ];
 
 export type NavigationListType = {
   Home: undefined;
   SignIn: undefined;
   Species: undefined;
+  Plants: undefined;
 };

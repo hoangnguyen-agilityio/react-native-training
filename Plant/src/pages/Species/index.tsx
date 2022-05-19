@@ -1,6 +1,6 @@
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import React, { FC } from 'react';
-import { ScrollView, SectionList, Text, View } from 'react-native';
+import { Pressable, ScrollView, SectionList, Text, View } from 'react-native';
 import Header from '../../components/HeaderLayout';
 import SearchBar from '../../components/SearchBar';
 import Section from '../../components/SectionLayout';
@@ -12,7 +12,7 @@ interface Props {
   navigation: NativeStackNavigationProp<NavigationListType, 'Species'>;
 }
 
-const DATA = [
+const SPECIES_DATA = [
   {
     title: 'A',
     data: ['Aizza', 'Aurger', 'Aisotto'],
@@ -61,7 +61,7 @@ const DATA = [
   },
 ];
 
-const Species: FC = () => {
+const Species: FC<Props> = ({ navigation }) => {
   return (
     <View style={styles.root}>
       <Header textBg="Species">
@@ -73,10 +73,16 @@ const Species: FC = () => {
         <SearchBar style={{ marginTop: -25 }} />
         <SectionList
           style={styles.list}
-          sections={DATA}
+          sections={SPECIES_DATA}
           keyExtractor={(item, index) => item + index}
-          renderItem={({ item }) => <Text style={styles.sectionItem}>{item}</Text>}
-          renderSectionHeader={({ section: { title } }) => <Text style={styles.sectionHeader}>{title}</Text>}
+          renderItem={({ item }) => (
+            <Pressable onPress={() => navigation.navigate('Plants')}>
+              <Text style={styles.sectionItem}>{item}</Text>
+            </Pressable>
+          )}
+          renderSectionHeader={({ section: { title } }) => (
+            <Text style={styles.sectionHeader}>{title}</Text>
+          )}
         />
       </Section>
     </View>

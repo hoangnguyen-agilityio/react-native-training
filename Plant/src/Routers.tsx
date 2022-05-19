@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Onboarding from './pages/Onboarding';
 import SignIn from './pages/SignIn';
 import Species from './pages/Species';
+import Plants from './pages/Plants';
 
 const Stack = createNativeStackNavigator();
 const isOnboarding = false;
@@ -28,6 +29,11 @@ const Routers: FC = () => {
         <Stack.Screen
           name="Species"
           component={Species}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Plants"
+          component={Plants}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
