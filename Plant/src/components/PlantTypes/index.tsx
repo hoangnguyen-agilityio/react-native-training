@@ -1,13 +1,5 @@
-import React, { FC, ReactNode } from 'react';
-import {
-  FlatList,
-  ImageBackground,
-  StyleProp,
-  Text,
-  View,
-  ViewStyle,
-} from 'react-native';
-import COLORS from '../../constants/colors';
+import React, { FC } from 'react';
+import { FlatList, ImageBackground, Text, View } from 'react-native';
 
 import styles from './styles';
 

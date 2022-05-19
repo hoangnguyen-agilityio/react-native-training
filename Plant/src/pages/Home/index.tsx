@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import { Image, ScrollView, Text, View } from 'react-native';
 import Catalogs from '../../components/Catalogs';
 import Header from '../../components/HeaderLayout';
+import Photographies from '../../components/Photographies';
 import PlantTypes from '../../components/PlantTypes';
 import SearchBar from '../../components/SearchBar';
 import Section from '../../components/SectionLayout';
@@ -34,8 +35,10 @@ const Home: FC = () => (
         <PlantTypes />
       </View>
       <Text style={styles.sectionTitle}>Photography</Text>
+      <View style={styles.horizontalListWrapper}>
+        <Photographies />
+      </View>
     </Section>
-    <Text>Home page</Text>
   </ScrollView>
 );
 

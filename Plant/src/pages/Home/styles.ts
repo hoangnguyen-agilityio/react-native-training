@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
   },
   main: {
     backgroundColor: COLORS.WHITE,
+    paddingBottom: 100,
   },
   catalogsWrapper: {
     marginTop: 35,
