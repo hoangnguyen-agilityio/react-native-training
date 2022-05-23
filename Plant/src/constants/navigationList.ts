@@ -14,6 +14,9 @@ export const NAVIGATION_LIST: {
   {
     page: 'Plants',
   },
+  {
+    page: 'PlantDetail',
+  },
 ];
 
 export type NavigationListType = {
@@ -21,4 +24,5 @@ export type NavigationListType = {
   SignIn: undefined;
   Species: undefined;
   Plants: undefined;
+  PlantDetail: undefined;
 };

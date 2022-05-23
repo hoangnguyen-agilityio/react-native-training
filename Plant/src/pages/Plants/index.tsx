@@ -5,8 +5,14 @@ import SearchBar from '../../components/SearchBar';
 import Section from '../../components/SectionLayout';
 import PlantList from '../../components/Plants';
 import styles from './styles';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { NavigationListType } from '../../constants/navigationList';
 
-const Plants: FC = () => {
+interface Props {
+  navigation: NativeStackNavigationProp<NavigationListType, 'Plants'>;
+}
+
+const Plants: FC<Props> = ({ navigation }) => {
   return (
     <ScrollView style={styles.root}>
       <Header textBg="Cactus">
@@ -18,7 +24,9 @@ const Plants: FC = () => {
         <SearchBar style={{ marginTop: -25 }} />
       </Section>
       <View style={{ ...styles.main, marginTop: 12 }}>
-        <PlantList />
+        <PlantList
+          handleRedirectToDetail={() => navigation.navigate('PlantDetail')}
+        />
       </View>
     </ScrollView>
   );

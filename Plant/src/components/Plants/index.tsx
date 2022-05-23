@@ -3,11 +3,20 @@ import { View } from 'react-native';
 import PlantItem from './PlantItem';
 import styles from './styles';
 
-const Plants: FC = () => {
+interface Props {
+  handleRedirectToDetail: () => void;
+}
+
+const Plants: FC<Props> = ({ handleRedirectToDetail }) => {
   return (
     <View style={styles.root}>
       {DATA.map((item, index) => (
-        <PlantItem key={item.title} data={item} index={index} />
+        <PlantItem
+          key={item.title}
+          data={item}
+          index={index}
+          handleRedirectToDetail={handleRedirectToDetail}
+        />
       ))}
     </View>
   );

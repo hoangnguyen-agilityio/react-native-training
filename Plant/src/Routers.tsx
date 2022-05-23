@@ -7,6 +7,7 @@ import Onboarding from './pages/Onboarding';
 import SignIn from './pages/SignIn';
 import Species from './pages/Species';
 import Plants from './pages/Plants';
+import PlantDetail from './pages/PlantDetail';
 
 const Stack = createNativeStackNavigator();
 const isOnboarding = false;
@@ -34,6 +35,11 @@ const Routers: FC = () => {
         <Stack.Screen
           name="Plants"
           component={Plants}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="PlantDetail"
+          component={PlantDetail}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
