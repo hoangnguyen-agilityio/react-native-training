@@ -43,13 +43,13 @@ const styles = StyleSheet.create({
   text: {
     fontFamily: 'SF-Pro-Display-Bold',
     color: '#6A6F7D',
-    fontSize: 10
+    fontSize: 10,
   },
   textActive: {
     fontFamily: 'SF-Pro-Display-Bold',
     color: COLORS.WHITE,
-    fontSize: 10
-  }
+    fontSize: 10,
+  },
 });
 
 export default styles;
