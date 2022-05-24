@@ -27,7 +27,9 @@ const Catalogs: FC<Props> = ({ handleMoveToPage }) => {
         />
         <Text style={styles.text}>SPECIES</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.catalog}>
+      <TouchableOpacity
+        style={styles.catalog}
+        onPress={() => handleMoveToPage('Articles')}>
         <BookIcon width={21} height={21} style={{ marginBottom: 6 }} />
         <Text style={styles.text}>ARTICLES</Text>
       </TouchableOpacity>

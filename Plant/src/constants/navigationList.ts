@@ -17,6 +17,9 @@ export const NAVIGATION_LIST: {
   {
     page: 'PlantDetail',
   },
+  {
+    page: 'Articles',
+  },
 ];
 
 export type NavigationListType = {
@@ -25,4 +28,5 @@ export type NavigationListType = {
   Species: undefined;
   Plants: undefined;
   PlantDetail: undefined;
+  Articles: undefined;
 };
