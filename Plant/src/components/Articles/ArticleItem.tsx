@@ -14,11 +14,12 @@ interface Props {
       name: string;
     };
   };
+  onPress: () => void;
 }
 
-const ArticleItem: FC<Props> = ({ data }) => {
+const ArticleItem: FC<Props> = ({ data, onPress }) => {
   return (
-    <TouchableOpacity style={styles.itemWrap}>
+    <TouchableOpacity style={styles.itemWrap} onPress={onPress}>
       <Image source={data.image} style={styles.image} />
       <View style={styles.content}>
         <Text style={styles.title}>{data.title}</Text>

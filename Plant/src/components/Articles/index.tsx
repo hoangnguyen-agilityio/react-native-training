@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { View } from 'react-native';
 import ArticleItem from './ArticleItem';
 import styles from './styles';
 
-const ArticleList = () => {
+interface Props {
+  handleRedirectToDetailPage: () => void
+}
+
+const ArticleList:FC<Props> = ({ handleRedirectToDetailPage }) => {
   return (
     <View style={styles.root}>
       {DATA.map(article => (
-        <ArticleItem data={article} />
+        <ArticleItem data={article} onPress={handleRedirectToDetailPage} />
       ))}
     </View>
   );
