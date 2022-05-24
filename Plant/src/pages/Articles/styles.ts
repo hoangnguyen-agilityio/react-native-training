@@ -8,8 +8,8 @@ const styles = StyleSheet.create({
   },
   header: {
     flex: 1,
-    paddingBottom: 40,
-    justifyContent: 'flex-end',
+    paddingVertical: 40,
+    justifyContent: 'space-between',
   },
   title: {
     fontFamily: 'SF-Pro-Display-Bold',

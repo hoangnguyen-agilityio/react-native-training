@@ -4,14 +4,29 @@ import Chip from '../../components/Chip';
 import Section from '../../components/SectionLayout';
 import styles from './styles';
 import { Rating } from 'react-native-ratings';
+import Navigation from '../../components/Navigation';
+import { CommonActions } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { NavigationListType } from '../../constants/navigationList';
 
-const PlantDetail: FC = () => {
+interface Props {
+  navigation: NativeStackNavigationProp<NavigationListType, 'PlantDetail'>;
+}
+
+const PlantDetail: FC<Props> = ({ navigation }) => {
   return (
     <ScrollView style={styles.main}>
       <ImageBackground
         source={require('../../assets/images/plant-detail.png')}
-        resizeMode="cover"
-        style={styles.header}></ImageBackground>
+        resizeMode="cover">
+        <View style={styles.header}>
+          <Section style={styles.navigation}>
+            <Navigation
+              handleBack={() => navigation.dispatch(CommonActions.goBack())}
+            />
+          </Section>
+        </View>
+      </ImageBackground>
       <Section style={styles.paddingSection}>
         <View style={styles.row}>
           <Chip label="DANGER" />

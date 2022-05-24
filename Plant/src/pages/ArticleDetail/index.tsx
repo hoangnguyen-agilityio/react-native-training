@@ -5,22 +5,34 @@ import {
   View,
   Text,
   Image,
-  Button,
-  Pressable,
   TouchableOpacity,
 } from 'react-native';
 import Chip from '../../components/Chip';
 import Section from '../../components/SectionLayout';
 import styles from './styles';
 import PlusIcon from '../../assets/images/plus.svg';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { NavigationListType } from '../../constants/navigationList';
+import Navigation from '../../components/Navigation';
+import { CommonActions } from '@react-navigation/native';
 
-const ArticleDetail: FC = () => {
+interface Props {
+  navigation: NativeStackNavigationProp<NavigationListType, 'ArticleDetail'>;
+}
+
+const ArticleDetail: FC<Props> = ({ navigation }) => {
   return (
     <ScrollView style={styles.main}>
       <ImageBackground
         source={require('../../assets/images/article-detail.png')}
         resizeMode="cover"
-        style={styles.header}></ImageBackground>
+        style={styles.header}>
+        <Section style={styles.navigation}>
+          <Navigation
+            handleBack={() => navigation.dispatch(CommonActions.goBack())}
+          />
+        </Section>
+        </ImageBackground>
       <Section style={styles.paddingSection}>
         <View style={styles.row}>
           <Chip label="VEGETABLES" />

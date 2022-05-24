@@ -1,5 +1,4 @@
 import { StyleSheet } from 'react-native';
-import COLORS from '../../constants/colors';
 
 const styles = StyleSheet.create({
   header: {
@@ -7,6 +6,9 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 280,
     position: 'relative',
+  },
+  navigation: {
+    paddingTop: 40,
   },
   main: {
     flex: 1,

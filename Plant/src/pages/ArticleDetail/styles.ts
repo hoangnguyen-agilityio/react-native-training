@@ -7,6 +7,9 @@ const styles = StyleSheet.create({
     height: 280,
     position: 'relative',
   },
+  navigation: {
+    paddingTop: 40,
+  },
   main: {
     flex: 1,
     backgroundColor: 'white',

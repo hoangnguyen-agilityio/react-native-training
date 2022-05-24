@@ -7,6 +7,8 @@ import PlantList from '../../components/Plants';
 import styles from './styles';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { NavigationListType } from '../../constants/navigationList';
+import Navigation from '../../components/Navigation';
+import { CommonActions } from '@react-navigation/native';
 
 interface Props {
   navigation: NativeStackNavigationProp<NavigationListType, 'Plants'>;
@@ -17,6 +19,9 @@ const Plants: FC<Props> = ({ navigation }) => {
     <ScrollView style={styles.root}>
       <Header textBg="Cactus">
         <Section style={styles.header}>
+          <Navigation
+            handleBack={() => navigation.dispatch(CommonActions.goBack())}
+          />
           <Text style={styles.title}>Cactus</Text>
         </Section>
       </Header>
