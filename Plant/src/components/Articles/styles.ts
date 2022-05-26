@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import COLORS from '../../constants/colors';
 
 const styles = StyleSheet.create({
   root: {
@@ -34,7 +35,7 @@ const styles = StyleSheet.create({
     fontFamily: 'SF-Pro-Display-Bold',
     fontSize: 15,
     lineHeight: 18,
-    color: '#36455A',
+    color: COLORS.CHARCOAL,
     letterSpacing: 0.5,
   },
   row: {
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({
     fontSize: 11,
     lineHeight: 13,
     marginBottom: 4,
-    color: '#36455A',
+    color: COLORS.CHARCOAL,
   },
   date: {
     fontFamily: 'SF-Pro-Display-Bold',

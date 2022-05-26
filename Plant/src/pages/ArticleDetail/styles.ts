@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     fontFamily: 'SF-Pro-Display-Bold',
     fontSize: 20,
     lineHeight: 24,
-    color: '#36455A',
+    color: COLORS.CHARCOAL,
   },
   body: {
     fontFamily: 'SF-Pro-Display-Regular',

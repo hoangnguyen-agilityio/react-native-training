@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import COLORS from '../../constants/colors';
 
 const styles = StyleSheet.create({
   header: {
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
     fontFamily: 'SF-Pro-Display-Bold',
     fontSize: 27,
     lineHeight: 27,
-    color: '#36455A',
+    color: COLORS.CHARCOAL,
   },
   ratingWrap: {
     marginTop: 12,

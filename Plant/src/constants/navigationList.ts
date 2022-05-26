@@ -23,6 +23,9 @@ export const NAVIGATION_LIST: {
   {
     page: 'ArticleDetail',
   },
+  {
+    page: 'Profile',
+  },
 ];
 
 export const HOME_PAGES: (keyof NavigationListType)[] = [
@@ -42,4 +45,5 @@ export type NavigationListType = {
   PlantDetail: undefined;
   Articles: undefined;
   ArticleDetail: undefined;
+  Profile: undefined;
 };

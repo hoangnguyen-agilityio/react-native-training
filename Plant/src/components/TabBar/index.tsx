@@ -20,7 +20,7 @@ const TabBar: FC = () => {
       currentPage: screen,
     });
 
-    if (screen === 'Articles') {
+    if (screen === 'Profile') {
       navigation.navigate(screen);
     } else {
       navigation.navigate(activeScreen.currentHomePage);
@@ -52,9 +52,9 @@ const TabBar: FC = () => {
         <View style={styles.col}>
           <TouchableOpacity
             style={styles.center}
-            onPress={() => onPressIcon('Articles')}>
-            <ProfileIcon width={25} height={25} color={getColor('Articles')} />
-            <Text style={[styles.label, { color: getColor('Articles') }]}>
+            onPress={() => onPressIcon('Profile')}>
+            <ProfileIcon width={25} height={25} color={getColor('Profile')} />
+            <Text style={[styles.label, { color: getColor('Profile') }]}>
               PROFILE
             </Text>
           </TouchableOpacity>

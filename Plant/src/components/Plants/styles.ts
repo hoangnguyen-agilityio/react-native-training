@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     fontFamily: 'SF-Pro-Display-Bold',
     fontSize: 17,
     lineHeight: 20,
-    color: '#36455A',
+    color: COLORS.CHARCOAL,
   },
   subTitle: {
     fontFamily: 'SF-Pro-Display-Bold',

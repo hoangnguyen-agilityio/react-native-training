@@ -16,6 +16,7 @@ import ArticleDetail from './pages/ArticleDetail';
 import { CurrentPageContext } from './contexts/currentPage';
 import { View } from 'react-native';
 import TabBar from './components/TabBar';
+import Profile from './pages/Profile';
 
 const Stack = createNativeStackNavigator();
 const isOnboarding = false;
@@ -30,7 +31,7 @@ const Routers: FC = () => {
     navigationRef.addListener('state', e => {
       const route = navigationRef.getCurrentRoute()?.name;
 
-      if (route !== 'Articles' && route !== 'SignIn') {
+      if (route !== 'Profile' && route !== 'SignIn') {
         setActiveScreen({
           currentPage: 'Home',
           currentHomePage: route,
@@ -80,6 +81,11 @@ const Routers: FC = () => {
           <Stack.Screen
             name="ArticleDetail"
             component={ArticleDetail}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="Profile"
+            component={Profile}
             options={{ headerShown: false }}
           />
         </Stack.Navigator>

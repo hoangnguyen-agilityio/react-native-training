@@ -4,14 +4,18 @@ import ArticleItem from './ArticleItem';
 import styles from './styles';
 
 interface Props {
-  handleRedirectToDetailPage: () => void
+  handleRedirectToDetailPage: () => void;
 }
 
-const ArticleList:FC<Props> = ({ handleRedirectToDetailPage }) => {
+const ArticleList: FC<Props> = ({ handleRedirectToDetailPage }) => {
   return (
     <View style={styles.root}>
       {DATA.map(article => (
-        <ArticleItem data={article} onPress={handleRedirectToDetailPage} />
+        <ArticleItem
+          data={article}
+          onPress={handleRedirectToDetailPage}
+          key={article.title}
+        />
       ))}
     </View>
   );
