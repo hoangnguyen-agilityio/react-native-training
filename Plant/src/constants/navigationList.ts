@@ -25,6 +25,15 @@ export const NAVIGATION_LIST: {
   },
 ];
 
+export const HOME_PAGES: (keyof NavigationListType)[] = [
+  'Home',
+  'Species',
+  'Plants',
+  'PlantDetail',
+  'Articles',
+  'ArticleDetail',
+];
+
 export type NavigationListType = {
   Home: undefined;
   SignIn: undefined;
