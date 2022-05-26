@@ -8,7 +8,8 @@ import Navigation from '../../components/Navigation';
 import { CommonActions } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { NavigationListType } from '../../constants/navigationList';
-
+import IconButton from '../../components/IconButton';
+import HeartIcon from '../../assets/images/heart-fill.svg';
 interface Props {
   navigation: NativeStackNavigationProp<NavigationListType, 'PlantDetail'>;
 }
@@ -25,6 +26,11 @@ const PlantDetail: FC<Props> = ({ navigation }) => {
               handleBack={() => navigation.dispatch(CommonActions.goBack())}
             />
           </Section>
+          <View style={styles.heartBtn}>
+            <IconButton color="#FF6262" shadow>
+              <HeartIcon />
+            </IconButton>
+          </View>
         </View>
       </ImageBackground>
       <Section style={styles.paddingSection}>

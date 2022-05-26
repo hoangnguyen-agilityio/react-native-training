@@ -60,6 +60,12 @@ const styles = StyleSheet.create({
   plusIcon: {
     marginRight: 6,
     fontSize: 7
+  },
+  heartBtn: {
+    position: 'absolute',
+    bottom: -45,
+    padding: 14,
+    right: 24,
   }
 });
 

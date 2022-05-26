@@ -4,9 +4,11 @@ import React, { FC, useContext } from 'react';
 import { ImageBackground, Text, TouchableOpacity, View } from 'react-native';
 import HomeIcon from '../../assets/images/home.svg';
 import ProfileIcon from '../../assets/images/profile.svg';
+import AddIcon from '../../assets/images/add.svg';
 import COLORS from '../../constants/colors';
 import { NavigationListType } from '../../constants/navigationList';
 import { CurrentPageContext } from '../../contexts/currentPage';
+import IconButton from '../IconButton';
 import styles from './styles';
 
 const TabBar: FC = () => {
@@ -46,8 +48,10 @@ const TabBar: FC = () => {
             </Text>
           </TouchableOpacity>
         </View>
-        <View style={styles.col}>
-          <Text>HOME</Text>
+        <View style={[styles.col, { marginBottom: 36 }]}>
+          <IconButton color="#48A2F5">
+            <AddIcon />
+          </IconButton>
         </View>
         <View style={styles.col}>
           <TouchableOpacity

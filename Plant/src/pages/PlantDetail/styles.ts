@@ -56,6 +56,12 @@ const styles = StyleSheet.create({
     fontSize: 14,
     lineHeight: 14,
   },
+  heartBtn: {
+    position: 'absolute',
+    bottom: -45,
+    padding: 14,
+    right: 24,
+  }
 });
 
 export default styles;
