@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import React, { FC } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -14,7 +15,9 @@ import ArticleDetail from './pages/ArticleDetail';
 import Profile from './pages/Profile';
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
+const Drawer = createDrawerNavigator();
 const Stack = createNativeStackNavigator();
 const HomeStack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -32,7 +35,7 @@ const HomeStackScreen = () => {
   );
 };
 
-const isLoggedIn = true;
+const isLoggedIn = false;
 
 const Routers: FC = () => {
   return (
@@ -45,10 +48,10 @@ const Routers: FC = () => {
           <Tab.Screen name="Profile" component={Profile} />
         </Tab.Navigator>
       ) : (
-        <Stack.Navigator screenOptions={{ headerShown: false }}>
-          <Stack.Screen name="Onboarding" component={Onboarding} />
-          <Stack.Screen name="SignIn" component={SignIn} />
-        </Stack.Navigator>
+        <Drawer.Navigator screenOptions={{ headerShown: false }}>
+          <Drawer.Screen name="Onboarding" component={Onboarding} />
+          <Drawer.Screen name="SignIn" component={SignIn} />
+        </Drawer.Navigator>
       )}
     </NavigationContainer>
   );
