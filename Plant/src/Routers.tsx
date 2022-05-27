@@ -16,6 +16,7 @@ import Profile from './pages/Profile';
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createDrawerNavigator } from '@react-navigation/drawer';
+import CameraScreen from './pages/Camera';
 
 const Drawer = createDrawerNavigator();
 const Stack = createNativeStackNavigator();
@@ -35,18 +36,24 @@ const HomeStackScreen = () => {
   );
 };
 
-const isLoggedIn = false;
+const isLoggedIn = true;
 
+const HomeTabs = () => (
+  <Tab.Navigator
+    tabBar={props => <TabBar {...props} />}
+    screenOptions={{ headerShown: false }}>
+    <Tab.Screen name="Home" component={HomeStackScreen} />
+    <Tab.Screen name="Profile" component={Profile} />
+  </Tab.Navigator>
+);
 const Routers: FC = () => {
   return (
     <NavigationContainer>
       {isLoggedIn ? (
-        <Tab.Navigator
-          tabBar={props => <TabBar {...props} />}
-          screenOptions={{ headerShown: false }}>
-          <Tab.Screen name="Home" component={HomeStackScreen} />
-          <Tab.Screen name="Profile" component={Profile} />
-        </Tab.Navigator>
+        <Stack.Navigator screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="Home" component={HomeTabs} />
+          <Stack.Screen name="Camera" component={CameraScreen} />
+        </Stack.Navigator>
       ) : (
         <Drawer.Navigator screenOptions={{ headerShown: false }}>
           <Drawer.Screen name="Onboarding" component={Onboarding} />

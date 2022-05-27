@@ -13,7 +13,7 @@ interface Props {
 const Catalogs: FC<Props> = ({ handleMoveToPage }) => {
   return (
     <View style={styles.root}>
-      <TouchableOpacity style={styles.catalogActive}>
+      <TouchableOpacity style={styles.catalogActive} onPress={() => handleMoveToPage('Camera')}>
         <CameraIcon width={21} height={21} style={{ marginBottom: 6 }} />
         <Text style={styles.textActive}>IDENTIFY</Text>
       </TouchableOpacity>
