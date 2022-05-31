@@ -1,6 +1,13 @@
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import React, { FC, useEffect } from 'react';
-import { Image, Pressable, ScrollView, Text, View } from 'react-native';
+import React, { FC, useEffect, useState } from 'react';
+import {
+  Image,
+  Linking,
+  Pressable,
+  ScrollView,
+  Text,
+  View,
+} from 'react-native';
 import Catalogs from '../../components/Catalogs';
 import Header from '../../components/HeaderLayout';
 import Photographies from '../../components/Photographies';
@@ -15,7 +22,33 @@ interface Props {
   navigation: NativeStackNavigationProp<NavigationListType, 'Home'>;
 }
 
+const useMount = func => useEffect(() => func(), []);
+
+const useInitialURL = () => {
+  const [url, setUrl] = useState(null);
+  const [processing, setProcessing] = useState(true);
+
+  useMount(() => {
+    const getUrlAsync = async () => {
+      // Get the deep link used to open the app
+      const initialUrl = await Linking.getInitialURL();
+
+      // The setTimeout is just for testing purpose
+      setTimeout(() => {
+        setUrl(initialUrl);
+        setProcessing(false);
+      }, 1000);
+    };
+
+    getUrlAsync();
+  });
+
+  return { url, processing };
+};
+
 const Home: FC<Props> = ({ navigation }) => {
+  const { url: initialUrl, processing } = useInitialURL();
+
   useEffect(() => {
     Notifications.registerRemoteNotifications();
 
@@ -45,6 +78,13 @@ const Home: FC<Props> = ({ navigation }) => {
   return (
     <ScrollView>
       <Header textBg="Home">
+        <Section>
+          <Text>
+            {processing
+              ? `Processing the initial url from a deep link`
+              : `The deep link is: ${initialUrl || 'None'}`}
+          </Text>
+        </Section>
         <Section>
           <Pressable
             style={styles.headerContent}

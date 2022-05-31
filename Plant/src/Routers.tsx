@@ -17,11 +17,21 @@ import Profile from './pages/Profile';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import CameraScreen from './pages/Camera';
+import { Text } from 'react-native';
 
 const Drawer = createDrawerNavigator();
 const Stack = createNativeStackNavigator();
 const HomeStack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
+
+const linking = {
+  prefixes: ['plants://', 'https://plants.com'],
+  config: {
+    screens: {
+      Home: 'plant/:id?',
+    },
+  },
+};
 
 const HomeStackScreen = () => {
   return (
@@ -48,10 +58,11 @@ const HomeTabs = () => (
 );
 const Routers: FC = () => {
   return (
-    <NavigationContainer>
+    <NavigationContainer linking={linking} fallback={<Text>Loading...</Text>}>
       {isLoggedIn ? (
         <Stack.Navigator screenOptions={{ headerShown: false }}>
-          <Stack.Screen name="Home" component={HomeTabs} />
+          <Stack.Screen name="Home" component={Home} />
+          {/* <Stack.Screen name="Home" component={HomeTabs} /> */}
           <Stack.Screen name="Camera" component={CameraScreen} />
         </Stack.Navigator>
       ) : (
